@@ -1,5 +1,6 @@
 float x = 400;
 float y = 400;
+float r = 70;
 int levels = 3;
 
 ArrayList<Circle> circles;
@@ -11,8 +12,9 @@ void setup() {
   
   
   for(int i = 0; levels > i; i++){
-  circles.add(new Circle(x, y));
-  y -= 50;
+    for(int u = 0; u<6; u++){
+  circles.add(new Circle(x, y, r));
+  y -= r;}
   }
 }
 
